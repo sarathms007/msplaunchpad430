@@ -9,9 +9,7 @@ while(i)
 {
 	P1OUT^=1;
 	delay();
-	P1OUT^=1;
-	delay();
-}}
+	}}
 
 void delay()
 {long int i;

@@ -1,0 +1,17 @@
+#include<msp430.h>
+//BLINK BOTH LEDS WITH DIFFRENT FREQUENCIES
+main()
+{
+P1DIR=0x41;
+P1OUT=1;
+TACTL=0x220;
+
+while(1){
+while(!(TACTL&1)){}
+P1OUT^=1;
+TACTL=0x260;
+while(!(TACTL&1)){}
+P1OUT^=0x40;
+TACTL=0x220;
+}
+}

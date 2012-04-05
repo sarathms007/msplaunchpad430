@@ -1,0 +1,1 @@
+/*testind the reinitialisatio of git after formating the pc */
